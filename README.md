@@ -1,5 +1,5 @@
 # 💫 About Me:
-Front End Developer with over twelve years of relevant experience working with HTML/CSS, PHP and JavaScript frameworks to produce and deliver exceptional customer experiences.
+As a skilled web developer, I have extensive experience in front-end development building web applications using Node.js, React.js, and MongoDB. My expertise in these technologies has allowed me to create highly scalable and responsive web applications that meet the needs of clients. My ability to work with different technologies and platforms has allowed me to create web applications that are both functional and aesthetically pleasing. I am passionate about staying up-to-date with the latest trends and technologies in web development, and I am always looking for new challenges to expand my skills.
 
 
 ## 🌐 Socials:
