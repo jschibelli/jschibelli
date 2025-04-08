@@ -1,12 +1,63 @@
-# 💫 About Me:
-As a skilled web developer, I have extensive experience in front-end development building web applications using Node.js, React.js, and MongoDB. My expertise in these technologies has allowed me to create highly scalable and responsive web applications that meet the needs of clients. My ability to work with different technologies and platforms has allowed me to create web applications that are both functional and aesthetically pleasing. I am passionate about staying up-to-date with the latest trends and technologies in web development, and I am always looking for new challenges to expand my skills.
 
+# 💫 About Me
 
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/johnschibelli) [![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?logo=stack-overflow&logoColor=white)](https://stackoverflow.com/users/john-schibelli) 
+I'm a Senior Front-End Developer who builds scalable, performant, and accessible interfaces—especially for real-time collaborative products. I specialize in React, Next.js, and TypeScript, with a strong focus on UI architecture, DX, and system resilience.
 
-# 💻 Tech Stack:
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white) ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![Green Sock](https://img.shields.io/badge/green%20sock-88CE02?style=for-the-badge&logo=greensock&logoColor=white) ![Gulp](https://img.shields.io/badge/GULP-%23CF4647.svg?style=for-the-badge&logo=gulp&logoColor=white) ![Less](https://img.shields.io/badge/less-2B4C80?style=for-the-badge&logo=less&logoColor=white) ![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white) ![Adobe XD](https://img.shields.io/badge/Adobe%20XD-470137?style=for-the-badge&logo=Adobe%20XD&logoColor=#FF61F6) ![Adobe Illustrator](https://img.shields.io/badge/adobeillustrator-%23FF9A00.svg?style=for-the-badge&logo=adobeillustrator&logoColor=white) ![Adobe Photoshop](https://img.shields.io/badge/adobephotoshop-%2331A8FF.svg?style=for-the-badge&logo=adobephotoshop&logoColor=white)
+Most recently, I led front-end development for SynaplyAI, a collaborative AI content platform. I built token-level conflict resolution, adaptive AI integration, and real-time editing using Yjs, WebSockets, and a fully custom UI layer.
+
+I don’t just generate code—I design interfaces that perform under pressure and scale with users.
+
+I’m passionate about developer experience, believing that great DX leads to great UX. Whether it's component structure, test automation, or performance tuning, I care about building systems devs love to work in and users trust.
 
 ---
+
+## 🤖 AI Integration
+
+Skilled in building adaptive UIs that collaborate intelligently with users through real-time AI suggestions and dynamic content streams. Integrated OpenAI and Claude APIs directly into live content pipelines with structured state handling.
+
+---
+
+## 🚀 DevOps & Deployment
+
+Experienced in deploying production-ready front ends with CI/CD pipelines using Vercel, GitHub Actions, and structured staging environments.
+
+---
+
+## 💼 What I'm Open To
+
+Currently open to freelance or consulting opportunities—especially projects focused on:
+- Performance-driven front-end development
+- UI systems and design architecture
+- Real-time or collaborative applications
+- AI-assisted interfaces and dev tool integration
+
+Let’s connect if you’re building something that needs a strong front-end foundation.
+
+---
+
+## 🌐 Socials
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/johnschibelli)  
+[![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?logo=stack-overflow&logoColor=white)](https://stackoverflow.com/users/john-schibelli)  
+
+---
+
+## 💻 Tech Stack
+
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Playwright](https://img.shields.io/badge/playwright-2E2E2E?style=for-the-badge&logo=playwright&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white)
+![Yjs](https://img.shields.io/badge/yjs-collaboration-green?style=for-the-badge)
+![OpenAI](https://img.shields.io/badge/openai-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Claude](https://img.shields.io/badge/claude-ai-%23f3e800.svg?style=for-the-badge)
+![WordPress](https://img.shields.io/badge/WordPress-21759B?style=for-the-badge&logo=wordpress&logoColor=white)
+![Shopify](https://img.shields.io/badge/shopify-96BF48?style=for-the-badge&logo=shopify&logoColor=white)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/githubactions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+
+---
+
 [![](https://visitcount.itsvg.in/api?id=jschibelli&icon=0&color=0)](https://visitcount.itsvg.in)
