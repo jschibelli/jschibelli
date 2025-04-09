@@ -3,7 +3,7 @@ const fetch = (...args) => import("node-fetch").then(mod => mod.default(...args)
 
 const readmePath = "README.md";
 const badgePath = "mindware-badge.svg";
-const username = "jschibelli"; // Your Hashnode username
+const username = "johnschibelli"; // Your Hashnode username
 
 const query = `
 {
