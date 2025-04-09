@@ -1,47 +1,53 @@
 const fs = require("fs");
 const Parser = require("rss-parser");
 const parser = new Parser();
+const badgePath = "mindware-badge.svg";
 
-const fetchWithRetry = async (url, retries = 3, delay = 5000) => {
-  for (let attempt = 1; attempt <= retries; attempt++) {
+async function fetchFeedWithRetry(url, retries = 3, delay = 1000) {
+  for (let i = 0; i < retries; i++) {
     try {
-      return await parser.parseURL(url);
-    } catch (err) {
-      console.log(`Attempt ${attempt} failed: ${err.message}`);
-      if (attempt === retries) throw err;
-      await new Promise(res => setTimeout(res, delay));
+      const feed = await parser.parseURL(url);
+      return feed;
+    } catch (error) {
+      if (error.message.includes("Status code 429") && i < retries - 1) {
+        console.log(`Rate limit hit, retrying in ${delay}ms...`);
+        await new Promise(res => setTimeout(res, delay));
+        delay *= 2; // Exponential backoff
+      } else {
+        throw error;
+      }
     }
   }
-};
+}
 
 (async () => {
-  const feedUrl = "https://schibelli.dev/rss.xml";
-  const feed = await fetchWithRetry(feedUrl);
+  try {
+    const feed = await fetchFeedWithRetry("https://schibelli.dev/rss.xml");
+    const readmePath = "README.md";
+    const readme = fs.readFileSync(readmePath, "utf-8");
 
-  const readmePath = "README.md";
-  const readme = fs.readFileSync(readmePath, "utf-8");
+    const latestPosts = feed.items.slice(0, 5).map(item => `- [${item.title}](${item.link})`).join("\n");
 
-  const latestPosts = feed.items
-    .slice(0, 5)
-    .map(item => `- [${item.title}](${item.link})`)
-    .join("\n");
+    const updatedReadme = readme.replace(
+      /## ✍️ Latest Posts on Mindware[\s\S]*?👉 \[More on schibelli\.dev\]\(https:\/\/schibelli\.dev\)/,
+      `## ✍️ Latest Posts on Mindware\n\n${latestPosts}\n\n👉 [More on schibelli.dev](https://schibelli.dev)`
+    );
 
-  const updatedReadme = readme.replace(
-    /## ✍️ Latest Posts on Mindware[\s\S]*?👉 \[More on schibelli\.dev\]\(https:\/\/schibelli\.dev\)/,
-    `## ✍️ Latest Posts on Mindware\n\n${latestPosts}\n\n![Mindware Badge](./mindware-badge.svg)\n\n👉 [More on schibelli.dev](https://schibelli.dev)`
-  );
+    fs.writeFileSync(readmePath, updatedReadme);
 
-  fs.writeFileSync(readmePath, updatedReadme);
-
-  // Generate badge with timestamp
-  const timestamp = new Date().toISOString().split("T").join(" ").replace(/\.\d+Z$/, " UTC");
-  const badgeSVG = `
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="20">
-  <rect width="300" height="20" fill="#555"/>
-  <rect x="130" width="170" height="20" fill="#28a745"/>
-  <text x="10" y="14" fill="#fff" font-family="Verdana" font-size="11">Mindware Last Updated</text>
-  <text x="140" y="14" fill="#fff" font-family="Verdana" font-size="11">${timestamp}</text>
-</svg>`;
-
-  fs.writeFileSync("mindware-badge.svg", badgeSVG.trim());
+    // Generate timestamp badge
+    const timestamp = new Date().toISOString();
+    const svg = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="270" height="20">
+      <rect width="270" height="20" fill="#555"/>
+      <rect x="80" width="190" height="20" fill="#007ec6"/>
+      <text x="10" y="14" fill="#fff" font-family="Verdana" font-size="11">Mindware Last Update</text>
+      <text x="90" y="14" fill="#fff" font-family="Verdana" font-size="11">${timestamp}</text>
+    </svg>
+    `;
+    fs.writeFileSync(badgePath, svg.trim());
+  } catch (error) {
+    console.error("Failed to update README:", error);
+    process.exit(1);
+  }
 })();
