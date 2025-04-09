@@ -24,14 +24,6 @@ Experienced in deploying production-ready front ends with CI/CD pipelines using 
 
 ---
 
-## 🚀 Featured Projects
-
-- [**SynaplyAI**](https://github.com/jschibelli/synaplyai) — Real-time AI content platform built with React, Next.js, Yjs, Zustand, and Claude/OpenAI APIs.
-- [**Mindware Blog**](https://github.com/jschibelli/mindware-blog) — Dev blog powered by Next.js + Hashnode, with custom theming and SEO tuning.
-- [**ColorStreet UI Testing**](https://github.com/jschibelli/colorstreet-playwright) — Automated front-end testing suite using Playwright and GitHub Actions.
-
----
-
 ## 💻 Tech Stack
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
