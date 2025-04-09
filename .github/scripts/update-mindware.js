@@ -8,8 +8,8 @@ async function fetchRSS(url, retries = 5) {
     return await parser.parseURL(url);
   } catch (error) {
     if (error.message.includes("Status code 429") && retries > 0) {
-      const waitTime = Math.pow(2, 5 - retries) * 1000; // Exponential backoff
-      console.log(`Rate limited. Retrying in ${waitTime / 1000} seconds...`);
+      const waitTime = Math.pow(2, 5 - retries) * 10000; // Exponential backoff
+      console.log(`Rate limited. Retrying in ${waitTime / 10000} seconds...`);
       await new Promise(resolve => setTimeout(resolve, waitTime));
       return fetchRSS(url, retries - 1);
     } else {
