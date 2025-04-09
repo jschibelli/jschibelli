@@ -1,14 +1,13 @@
-
 name: Update Latest Blog Posts
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "0 */12 * * *" # Every 12 hours
   workflow_dispatch:
 
 jobs:
   update-readme:
-    name: Update README with latest blog posts
+    name: Update README with latest blog posts and badge
     runs-on: ubuntu-latest
 
     steps:
@@ -20,16 +19,16 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install rss-parser
-        run: npm install rss-parser
+      - name: Install dependencies
+        run: npm install node-fetch
 
-      - name: Update README
+      - name: Run blog updater script
         run: node .github/scripts/update-mindware.js
 
-      - name: Commit changes
+      - name: Commit and push changes
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
           git add README.md mindware-badge.svg
-          git commit -m "📝 Auto-update: latest blog posts and badge"
+          git commit -m "📝 Auto-update: latest blog posts + badge"
           git push
