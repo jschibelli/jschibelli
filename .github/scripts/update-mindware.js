@@ -1,14 +1,32 @@
 const fs = require("fs");
-const Parser = require("rss-parser");
-const parser = new Parser();
+const fetch = require("node-fetch");
 
-const fetchWithRetry = async (url, retries = 4, delay = 5000) => {
+const readmePath = "README.md";
+const badgePath = "mindware-badge.svg";
+const username = "jschibelli"; // Your Hashnode username
+
+const query = `
+{
+  user(username: "${username}") {
+    publication {
+      posts(page: 0) {
+        title
+        slug
+        brief
+        dateAdded
+      }
+    }
+  }
+}`;
+
+const fetchWithRetry = async (url, options, retries = 4, delay = 5000) => {
   for (let attempt = 1; attempt <= retries; attempt++) {
     try {
-      const feed = await parser.parseURL(url);
-      return feed;
+      const response = await fetch(url, options);
+      if (!response.ok) throw new Error(`Status ${response.status}`);
+      return await response.json();
     } catch (err) {
-      console.warn(`RSS fetch attempt ${attempt} failed: ${err.message}`);
+      console.warn(`Attempt ${attempt} failed: ${err.message}`);
       if (attempt === retries) throw err;
       await new Promise(res => setTimeout(res, delay * attempt));
     }
@@ -16,16 +34,19 @@ const fetchWithRetry = async (url, retries = 4, delay = 5000) => {
 };
 
 (async () => {
-  const rssProxy = "https://api.rss2json.com/v1/api.json?rss_url=https://schibelli.dev/rss.xml";
-  const feed = await fetchWithRetry(rssProxy);
+  const data = await fetchWithRetry("https://gql.hashnode.com", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ query })
+  });
 
-  const readmePath = "README.md";
-  const readme = fs.readFileSync(readmePath, "utf-8");
+  const posts = data?.data?.user?.publication?.posts || [];
 
-  const latestPosts = feed.items
-    .slice(0, 5)
-    .map(item => `- [${item.title}](${item.link})`)
+  const latestPosts = posts.slice(0, 5)
+    .map(p => `- [${p.title}](https://${username}.hashnode.dev/${p.slug})`)
     .join("\n");
+
+  const readme = fs.readFileSync(readmePath, "utf-8");
 
   const updatedReadme = readme.replace(
     /## ✍️ Latest Posts on Mindware[\s\S]*?👉 \[More on schibelli\.dev\]\(https:\/\/schibelli\.dev\)/,
@@ -34,7 +55,7 @@ const fetchWithRetry = async (url, retries = 4, delay = 5000) => {
 
   fs.writeFileSync(readmePath, updatedReadme);
 
-  // Generate SVG badge with UTC timestamp
+  // Generate SVG badge with timestamp
   const timestamp = new Date().toISOString().replace("T", " ").replace(/\.\d+Z$/, " UTC");
   const badgeSVG = `
 <svg xmlns="http://www.w3.org/2000/svg" width="320" height="20">
@@ -44,5 +65,5 @@ const fetchWithRetry = async (url, retries = 4, delay = 5000) => {
   <text x="150" y="14" fill="#fff" font-family="Verdana" font-size="11">${timestamp}</text>
 </svg>`;
 
-  fs.writeFileSync("mindware-badge.svg", badgeSVG.trim());
+  fs.writeFileSync(badgePath, badgeSVG.trim());
 })();
