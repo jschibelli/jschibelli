@@ -44,9 +44,9 @@ Experienced in deploying production-ready front ends with CI/CD pipelines using 
 
 ## ✍️ Latest Posts on Mindware
 
-- [How GitHub Copilot’s ROBIN Takes Debugging to the Next Level](https://schibelli.dev/github-copilot-robin-debugging)
-- [Mastering React with Next.js – Part 11](https://schibelli.dev/mastering-react-final-part)
-- [The Token Trap: How AI Can Mislead Your Editor](https://schibelli.dev/the-token-trap)
+- [How We Built SynaplyAI](https://schibelli.dev/how-we-built-synaplyai)
+- [Vibe Coding](https://schibelli.dev/vibe-coding)
+- [Advanced State Management in React: When to Use Context, Redux, or Zustand](https://schibelli.dev/advanced-state-management-in-react-when-to-use-context-redux-or-zustand)
 
 👉 [More on schibelli.dev](https://schibelli.dev)
 
