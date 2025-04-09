@@ -20,11 +20,15 @@ async function fetchRSS(url, retries = 5) {
 
 (async () => {
   try {
-    const feed = await fetchRSS("https://schibelli.dev/rss.xml");
+    const feed = await fetchWithRetry("https://api.rss2json.com/v1/api.json?rss_url=https://schibelli.dev/rss.xml");
     const readmePath = "README.md";
     const readme = fs.readFileSync(readmePath, "utf-8");
 
-    const latestPosts = feed.items.slice(0, 5).map(item => `- [${item.title}](${item.link})`).join("\n");
+    const latestPosts = feed.items
+        .slice(0, 5)
+        .map(item => `- [${item.title}](${item.link})`)
+        .join("\\n");
+
 
     const updatedReadme = readme.replace(
       /## ✍️ Latest Posts on Mindware[\s\S]*?👉 \[More on schibelli\.dev\]\(https:\/\/schibelli\.dev\)/,
