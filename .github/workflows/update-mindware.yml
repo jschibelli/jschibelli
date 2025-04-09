@@ -23,7 +23,7 @@ jobs:
         run: npm install node-fetch
 
       - name: Run blog updater script
-        run: node .github/scripts/update-mindware.js
+        run: node .github/scripts/update-mindware.mjs
 
       - name: Commit and push changes
         run: |

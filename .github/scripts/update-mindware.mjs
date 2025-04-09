@@ -1,9 +1,9 @@
-const fs = require("fs");
-const fetch = (...args) => import("node-fetch").then(mod => mod.default(...args));
+import fs from "fs";
+import fetch from "node-fetch";
 
 const readmePath = "README.md";
 const badgePath = "mindware-badge.svg";
-const username = "johnschibelli"; // Your Hashnode username
+const username = "johnschibelli";
 
 const query = `
 {
@@ -33,7 +33,7 @@ const fetchWithRetry = async (url, options, retries = 4, delay = 5000) => {
   }
 };
 
-(async () => {
+const main = async () => {
   const data = await fetchWithRetry("https://gql.hashnode.com", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -55,7 +55,6 @@ const fetchWithRetry = async (url, options, retries = 4, delay = 5000) => {
 
   fs.writeFileSync(readmePath, updatedReadme);
 
-  // Generate SVG badge with timestamp
   const timestamp = new Date().toISOString().replace("T", " ").replace(/\.\d+Z$/, " UTC");
   const badgeSVG = `
 <svg xmlns="http://www.w3.org/2000/svg" width="320" height="20">
@@ -66,4 +65,6 @@ const fetchWithRetry = async (url, options, retries = 4, delay = 5000) => {
 </svg>`;
 
   fs.writeFileSync(badgePath, badgeSVG.trim());
-})();
+};
+
+main();
