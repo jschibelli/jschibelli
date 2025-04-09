@@ -1,4 +1,4 @@
-![John Schibelli](https://cdn.hashnode.com/res/hashnode/image/upload/v1740440673407/0f44c034-8485-46d5-b622-f4506cf8a000.jpeg align="center")
+![John Schibelli](https://cdn.hashnode.com/res/hashnode/image/upload/v1740440673407/0f44c034-8485-46d5-b622-f4506cf8a000.jpeg)
 # 💫 About Me
 
 I'm a Senior Front-End Developer who builds scalable, performant, and accessible interfaces—especially for real-time collaborative products. I specialize in React, Next.js, and TypeScript, with a strong focus on UI architecture, DX, and system resilience.
