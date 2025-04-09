@@ -3,26 +3,24 @@ const Parser = require("rss-parser");
 const parser = new Parser();
 const badgePath = "mindware-badge.svg";
 
-async function fetchFeedWithRetry(url, retries = 3, delay = 1000) {
-  for (let i = 0; i < retries; i++) {
-    try {
-      const feed = await parser.parseURL(url);
-      return feed;
-    } catch (error) {
-      if (error.message.includes("Status code 429") && i < retries - 1) {
-        console.log(`Rate limit hit, retrying in ${delay}ms...`);
-        await new Promise(res => setTimeout(res, delay));
-        delay *= 2; // Exponential backoff
-      } else {
-        throw error;
-      }
+async function fetchRSS(url, retries = 5) {
+  try {
+    return await parser.parseURL(url);
+  } catch (error) {
+    if (error.message.includes("Status code 429") && retries > 0) {
+      const waitTime = Math.pow(2, 5 - retries) * 1000; // Exponential backoff
+      console.log(`Rate limited. Retrying in ${waitTime / 1000} seconds...`);
+      await new Promise(resolve => setTimeout(resolve, waitTime));
+      return fetchRSS(url, retries - 1);
+    } else {
+      throw error;
     }
   }
 }
 
 (async () => {
   try {
-    const feed = await fetchFeedWithRetry("https://schibelli.dev/rss.xml");
+    const feed = await fetchRSS("https://schibelli.dev/rss.xml");
     const readmePath = "README.md";
     const readme = fs.readFileSync(readmePath, "utf-8");
 
@@ -47,7 +45,7 @@ async function fetchFeedWithRetry(url, retries = 3, delay = 1000) {
     `;
     fs.writeFileSync(badgePath, svg.trim());
   } catch (error) {
-    console.error("Failed to update README:", error);
+    console.error("Failed to update RSS feed:", error);
     process.exit(1);
   }
 })();
