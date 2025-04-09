@@ -1,4 +1,5 @@
 ![John Schibelli](https://cdn.hashnode.com/res/hashnode/image/upload/v1740440673407/0f44c034-8485-46d5-b622-f4506cf8a000.jpeg)
+
 # 💫 About Me
 
 I'm a Senior Front-End Developer who builds scalable, performant, and accessible interfaces—especially for real-time collaborative products. I specialize in React, Next.js, and TypeScript, with a strong focus on UI architecture, DX, and system resilience.
@@ -23,22 +24,11 @@ Experienced in deploying production-ready front ends with CI/CD pipelines using 
 
 ---
 
-## 💼 What I'm Open To
+## 🚀 Featured Projects
 
-Currently open to freelance or consulting opportunities—especially projects focused on:
-- Performance-driven front-end development
-- UI systems and design architecture
-- Real-time or collaborative applications
-- AI-assisted interfaces and dev tool integration
-
-Let’s connect if you’re building something that needs a strong front-end foundation.
-
----
-
-## 🌐 Socials
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/johnschibelli)  
-[![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?logo=stack-overflow&logoColor=white)](https://stackoverflow.com/users/john-schibelli)  
+- [**SynaplyAI**](https://github.com/jschibelli/synaplyai) — Real-time AI content platform built with React, Next.js, Yjs, Zustand, and Claude/OpenAI APIs.
+- [**Mindware Blog**](https://github.com/jschibelli/mindware-blog) — Dev blog powered by Next.js + Hashnode, with custom theming and SEO tuning.
+- [**ColorStreet UI Testing**](https://github.com/jschibelli/colorstreet-playwright) — Automated front-end testing suite using Playwright and GitHub Actions.
 
 ---
 
@@ -60,4 +50,37 @@ Let’s connect if you’re building something that needs a strong front-end fou
 
 ---
 
+## ✍️ Latest Posts on Mindware
+
+- [How GitHub Copilot’s ROBIN Takes Debugging to the Next Level](https://schibelli.dev/github-copilot-robin-debugging)
+- [Mastering React with Next.js – Part 11](https://schibelli.dev/mastering-react-final-part)
+- [The Token Trap: How AI Can Mislead Your Editor](https://schibelli.dev/the-token-trap)
+
+👉 [More on schibelli.dev](https://schibelli.dev)
+
+---
+
+## 💼 What I'm Open To
+
+Currently open to freelance or consulting opportunities—especially projects focused on:
+- Performance-driven front-end development
+- UI systems and design architecture
+- Real-time or collaborative applications
+- AI-assisted interfaces and dev tool integration
+
+Let’s connect if you’re building something that needs a strong front-end foundation.
+
+---
+
+## 🌐 Socials
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/johnschibelli)  
+[![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?logo=stack-overflow&logoColor=white)](https://stackoverflow.com/users/john-schibelli)  
+[![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge)](https://github.com/jschibelli)  
+[![Website](https://img.shields.io/badge/Blog-schibelli.dev-000000?style=for-the-badge)](https://schibelli.dev)  
+[![Email](https://img.shields.io/badge/Email-jschibelli@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jschibelli@gmail.com)
+
+---
+
 [![](https://visitcount.itsvg.in/api?id=jschibelli&icon=0&color=0)](https://visitcount.itsvg.in)
+
