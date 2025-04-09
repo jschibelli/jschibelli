@@ -1,5 +1,6 @@
 const fs = require("fs");
-const fetch = require("node-fetch");
+const fetch = (...args) => import("node-fetch").then(mod => mod.default(...args));
+
 
 const readmePath = "README.md";
 const badgePath = "mindware-badge.svg";
