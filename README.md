@@ -1,78 +1,74 @@
+# John Schibelli
+
+Senior Front-End Engineer · React · Next.js · TypeScript · Automation · AI Workflows · Accessibility
+
 ![John Schibelli](https://cdn.hashnode.com/res/hashnode/image/upload/v1740440673407/0f44c034-8485-46d5-b622-f4506cf8a000.jpeg)
 
-# 💫 About Me
+---
 
-I'm a Senior Front-End Developer who builds scalable, performant, and accessible interfaces—especially for real-time collaborative products. I specialize in React, Next.js, and TypeScript, with a strong focus on UI architecture, DX, and system resilience.
+## 💫 About Me
 
-Most recently, I led front-end development for SynaplyAI, a collaborative AI content platform. I built token-level conflict resolution, adaptive AI integration, and real-time editing using Yjs, WebSockets, and a fully custom UI layer.
+I’m a Senior Front-End Engineer with 15+ years of experience building scalable, high-performance web applications.
+My focus is on **accessible, maintainable, and automation-ready interfaces** built with React, Next.js, and TypeScript.
 
-I don’t just generate code—I design interfaces that perform under pressure and scale with users.
-
-I’m passionate about developer experience, believing that great DX leads to great UX. Whether it's component structure, test automation, or performance tuning, I care about building systems devs love to work in and users trust.
+I design front-end systems that perform under pressure and scale smoothly—from component structure and CI/CD pipelines to end-to-end testing with Playwright.
+I care about developer experience as much as user experience: clean processes, predictable builds, and friction-free releases.
 
 ---
 
-## 🤖 AI Integration
+## ⚙️ How I Build
 
-Skilled in building adaptive UIs that collaborate intelligently with users through real-time AI suggestions and dynamic content streams. Integrated OpenAI and Claude APIs directly into live content pipelines with structured state handling.
-
----
-
-## 🚀 DevOps & Deployment
-
-Experienced in deploying production-ready front ends with CI/CD pipelines using Vercel, GitHub Actions, and structured staging environments.
+* CI/CD pipelines with **GitHub Actions** and **Vercel**
+* Automated testing with **Playwright** and **Jest**
+* Monorepo management with **Turborepo**
+* AI-assisted development using **Cursor**, **Copilot**, and **Windsurf** to standardize repetitive work and accelerate delivery
+* Modern accessibility and performance tuning practices (Lighthouse / Core Web Vitals)
 
 ---
 
 ## 💻 Tech Stack
 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![Playwright](https://img.shields.io/badge/playwright-2E2E2E?style=for-the-badge&logo=playwright&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white)
-![Yjs](https://img.shields.io/badge/yjs-collaboration-green?style=for-the-badge)
-![OpenAI](https://img.shields.io/badge/openai-412991?style=for-the-badge&logo=openai&logoColor=white)
-![Claude](https://img.shields.io/badge/claude-ai-%23f3e800.svg?style=for-the-badge)
-![WordPress](https://img.shields.io/badge/WordPress-21759B?style=for-the-badge&logo=wordpress&logoColor=white)
-![Shopify](https://img.shields.io/badge/shopify-96BF48?style=for-the-badge&logo=shopify&logoColor=white)
-![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/githubactions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge\&logo=react\&logoColor=%2361DAFB)
+![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge\&logo=nextdotjs\&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge\&logo=typescript\&logoColor=white)
+![Playwright](https://img.shields.io/badge/playwright-2E2E2E?style=for-the-badge\&logo=playwright\&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge\&logo=tailwind-css\&logoColor=white)
+![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge\&logo=nestjs\&logoColor=white)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge\&logo=vercel\&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/githubactions-2088FF?style=for-the-badge\&logo=github-actions\&logoColor=white)
+![WordPress](https://img.shields.io/badge/WordPress-21759B?style=for-the-badge\&logo=wordpress\&logoColor=white)
+![Shopify](https://img.shields.io/badge/shopify-96BF48?style=for-the-badge\&logo=shopify\&logoColor=white)
 
 ---
 
-## ✍️ Latest Posts on Mindware
+## 🧭 Featured Work
 
-- [How We Built SynaplyAI](https://schibelli.dev/how-we-built-synaplyai)
-- [Vibe Coding](https://schibelli.dev/vibe-coding)
-- [Advanced State Management in React: When to Use Context, Redux, or Zustand](https://schibelli.dev/advanced-state-management-in-react-when-to-use-context-redux-or-zustand)
-
-👉 [More on schibelli.dev](https://schibelli.dev)
-
----
-
-## 💼 What I'm Open To
-
-Currently open to freelance or consulting opportunities—especially projects focused on:
-- Performance-driven front-end development
-- UI systems and design architecture
-- Real-time or collaborative applications
-- AI-assisted interfaces and dev tool integration
-
-Let’s connect if you’re building something that needs a strong front-end foundation.
+* [Portfolio – schibelli.dev](https://schibelli.dev)
+  Personal site built with Next.js 15 and TypeScript; dynamic content via Hashnode / Contentful; automated deploys to Vercel.
+* [IntraWeb Technologies](https://intrawebtech.com)
+  Company site and incubator projects using CI/CD, Playwright, and accessibility-first design.
 
 ---
 
-## 🌐 Socials
+## ✍️ Latest Writing
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/johnschibelli)  
-[![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?logo=stack-overflow&logoColor=white)](https://stackoverflow.com/users/john-schibelli)  
-[![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge)](https://github.com/jschibelli)  
-[![Website](https://img.shields.io/badge/Blog-schibelli.dev-000000?style=for-the-badge)](https://schibelli.dev)  
-[![Email](https://img.shields.io/badge/Email-jschibelli@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jschibelli@gmail.com)
+* [Vibe Coding](https://schibelli.dev/vibe-coding)
+* [Advanced State Management in React](https://schibelli.dev/advanced-state-management-in-react-when-to-use-context-redux-or-zustand)
+  ➡ [More on schibelli.dev](https://schibelli.dev)
 
 ---
 
-[![](https://visitcount.itsvg.in/api?id=jschibelli&icon=0&color=0)](https://visitcount.itsvg.in)
+## 💼 Open To
+
+Freelance or consulting work focused on:
+
+* Performance-driven front-end architecture
+* Developer-experience and automation tooling
+* Real-time or collaborative web apps
+
+---
+
+## 🌐 Connect
+
+[LinkedIn](https://linkedin.com/in/johnschibelli) • [GitHub](https://github.com/jschibelli) • [Blog](https://schibelli.dev) • [Email](mailto:jschibelli@gmail.com)
 
