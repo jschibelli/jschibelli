@@ -43,7 +43,7 @@ I care about developer experience as much as user experience: clean processes, p
 
 ## 🧭 Featured Work
 
-* [Portfolio – schibelli.dev](https://johnschibelli.dev)
+* [Portfolio – johnschibelli.dev](https://johnschibelli.dev)
   Personal site built with Next.js 15 and TypeScript; dynamic content via Hashnode / Contentful; automated deploys to Vercel.
 * [IntraWeb Technologies](https://intrawebtech.com)
   Company site and incubator projects using CI/CD, Playwright, and accessibility-first design.
