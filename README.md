@@ -43,7 +43,7 @@ I care about developer experience as much as user experience: clean processes, p
 
 ## 🧭 Featured Work
 
-* [Portfolio – schibelli.dev](https://schibelli.dev)
+* [Portfolio – schibelli.dev](https://johnschibelli.dev)
   Personal site built with Next.js 15 and TypeScript; dynamic content via Hashnode / Contentful; automated deploys to Vercel.
 * [IntraWeb Technologies](https://intrawebtech.com)
   Company site and incubator projects using CI/CD, Playwright, and accessibility-first design.
@@ -70,5 +70,5 @@ Freelance or consulting work focused on:
 
 ## 🌐 Connect
 
-[LinkedIn](https://linkedin.com/in/johnschibelli) • [GitHub](https://github.com/jschibelli) • [Blog](https://schibelli.dev) • [Email](mailto:jschibelli@gmail.com)
+[LinkedIn](https://linkedin.com/in/johnschibelli) • [GitHub](https://github.com/jschibelli) • [Blog](https://johnschibelli.dev) • [Email](mailto:jschibelli@gmail.com)
 
