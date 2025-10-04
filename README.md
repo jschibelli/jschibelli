@@ -2,7 +2,7 @@
 
 Senior Front-End Engineer · React · Next.js · TypeScript · Automation · AI Workflows · Accessibility
 
-![John Schibelli](https://cdn.hashnode.com/res/hashnode/image/upload/v1740440673407/0f44c034-8485-46d5-b622-f4506cf8a000.jpeg)
+![John Schibelli](https://raw.githubusercontent.com/jschibelli/portfolio-os/main/apps/site/public/assets/og.png)
 
 ---
 
