@@ -15,7 +15,7 @@ Based in Northern New Jersey and open to remote opportunities.
 | [Atlas](https://github.com/IntraWeb-Technology/nexus/tree/main/apps/atlas-web) | Next.js 16 portfolio frontend built against documented Figma authority and a versioned Build Manifest. The workflow combines committed AI rules, hybrid Strapi content boundaries, Playwright and axe validation, and a required GitHub CI Gate. |
 | [Nexus](https://github.com/IntraWeb-Technology/nexus) | IntraWeb Technology's pnpm and Turborepo platform for Atlas, the company site, an authenticated client portal, a shared Strapi CMS, n8n workflows, and operational tooling. |
 | [Portfolio OS](https://github.com/jschibelli/portfolio-os) | Next.js 15 and TypeScript monorepo powering my current portfolio, with GitHub Actions, Playwright coverage, documentation, and Vercel delivery. |
-| [IntraWeb Technology](https://www.intrawebtech.com/) | Product engineering and consulting work spanning web platforms, automation, content architecture, and client operations. |
+| [IntraWeb Technology Website](https://www.intrawebtech.com/) ([source](https://github.com/IntraWeb-Technology/nexus/tree/main/apps/iw-site-q2)) | Next.js 16 production marketing site with contact and intake workflows, reCAPTCHA Enterprise, HubSpot, Resend, n8n integration, GitHub Actions, and Vercel delivery. |
 
 ## How I engineer
 
