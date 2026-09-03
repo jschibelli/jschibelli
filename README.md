@@ -1,74 +1,46 @@
+![John Schibelli — Senior Software Engineer](./assets/john-schibelli-profile-banner.webp)
+
 # John Schibelli
 
-Senior Front-End Engineer · React · Next.js · TypeScript · Automation · AI Workflows · Accessibility
+**Senior Software Engineer building production React and Next.js systems, test automation, and governed AI-assisted engineering workflows.**
 
-![John Schibelli](https://raw.githubusercontent.com/jschibelli/portfolio-os/main/apps/site/public/assets/og.png)
+I build customer-facing applications and internal platforms where product design, frontend architecture, APIs, content systems, automation, and delivery need to work as one system. I care about accessible interfaces, predictable builds, testable behavior, and engineering decisions that can be traced to evidence.
 
----
+Based in Northern New Jersey and open to remote opportunities.
 
-## 💫 About Me
+## Selected engineering work
 
-I’m a Senior Front-End Engineer with 15+ years of experience building scalable, high-performance web applications.
-My focus is on **accessible, maintainable, and automation-ready interfaces** built with React, Next.js, and TypeScript.
+| Project | Engineering evidence |
+| --- | --- |
+| [Atlas](https://github.com/IntraWeb-Technology/nexus/tree/main/apps/atlas-web) | Next.js 16 portfolio frontend built against documented Figma authority and a versioned Build Manifest. The workflow combines committed AI rules, hybrid Strapi content boundaries, Playwright and axe validation, and a required GitHub CI Gate. |
+| [Nexus](https://github.com/IntraWeb-Technology/nexus) | IntraWeb Technology's pnpm and Turborepo platform for Atlas, the company site, an authenticated client portal, a shared Strapi CMS, n8n workflows, and operational tooling. |
+| [Portfolio OS](https://github.com/jschibelli/portfolio-os) | Next.js 15 and TypeScript monorepo powering my current portfolio, with GitHub Actions, Playwright coverage, documentation, and Vercel delivery. |
+| [IntraWeb Technology](https://www.intrawebtech.com/) | Product engineering and consulting work spanning web platforms, automation, content architecture, and client operations. |
 
-I design front-end systems that perform under pressure and scale smoothly—from component structure and CI/CD pipelines to end-to-end testing with Playwright.
-I care about developer experience as much as user experience: clean processes, predictable builds, and friction-free releases.
+## How I engineer
 
----
+- Start with product, design, content, and architecture authority before implementation.
+- Use AI to accelerate bounded work, not to invent requirements or approve its own output.
+- Build automated checks around behavior, accessibility, contracts, and production builds.
+- Keep release gates, deferred risk, and human decisions explicit.
+- Prefer maintainable systems and clear operational boundaries over decorative complexity.
 
-## ⚙️ How I Build
+AI is part of my engineering workflow through ChatGPT, Cursor, and Claude. Product truth remains with approved requirements, design authority, versioned contracts, automated evidence, and human release ownership.
 
-* CI/CD pipelines with **GitHub Actions** and **Vercel**
-* Automated testing with **Playwright** and **Jest**
-* Monorepo management with **Turborepo**
-* AI-assisted development using **Cursor**, **Copilot**, and **Windsurf** to standardize repetitive work and accelerate delivery
-* Modern accessibility and performance tuning practices (Lighthouse / Core Web Vitals)
+## Core stack
 
----
+| Area | Technologies |
+| --- | --- |
+| Frontend | React, Next.js, TypeScript, Tailwind CSS, accessible component systems |
+| Backend and content | Node.js, NestJS, REST, GraphQL, PostgreSQL, Supabase, Strapi, Contentful |
+| Quality | Playwright, Jest, axe, API validation, visual review |
+| Platform | GitHub Actions, Vercel, Docker, Turborepo, pnpm, n8n |
+| Collaboration | Figma, documented decision records, AI-assisted implementation governance |
 
-## 💻 Tech Stack
+## Open to
 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge\&logo=react\&logoColor=%2361DAFB)
-![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge\&logo=nextdotjs\&logoColor=white)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge\&logo=typescript\&logoColor=white)
-![Playwright](https://img.shields.io/badge/playwright-2E2E2E?style=for-the-badge\&logo=playwright\&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge\&logo=tailwind-css\&logoColor=white)
-![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge\&logo=nestjs\&logoColor=white)
-![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge\&logo=vercel\&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/githubactions-2088FF?style=for-the-badge\&logo=github-actions\&logoColor=white)
-![WordPress](https://img.shields.io/badge/WordPress-21759B?style=for-the-badge\&logo=wordpress\&logoColor=white)
-![Shopify](https://img.shields.io/badge/shopify-96BF48?style=for-the-badge\&logo=shopify\&logoColor=white)
+I am pursuing Senior Software Engineer and Senior Front-End Engineer roles, along with focused consulting work involving React and Next.js architecture, test automation, platform modernization, and AI-assisted engineering workflows.
 
----
+## Connect
 
-## 🧭 Featured Work
-
-* [Portfolio – johnschibelli.dev](https://johnschibelli.dev)
-  Personal site built with Next.js 15 and TypeScript; dynamic content via Hashnode / Contentful; automated deploys to Vercel.
-* [IntraWeb Technologies](https://intrawebtech.com)
-  Company site and incubator projects using CI/CD, Playwright, and accessibility-first design.
-
----
-
-## ✍️ Latest Writing
-
-* [Vibe Coding](https://schibelli.dev/vibe-coding)
-* [Advanced State Management in React](https://schibelli.dev/advanced-state-management-in-react-when-to-use-context-redux-or-zustand)
-  ➡ [More on schibelli.dev](https://schibelli.dev)
-
----
-
-## 💼 Open To
-
-Freelance or consulting work focused on:
-
-* Performance-driven front-end architecture
-* Developer-experience and automation tooling
-* Real-time or collaborative web apps
-
----
-
-## 🌐 Connect
-
-[LinkedIn](https://linkedin.com/in/johnschibelli) • [GitHub](https://github.com/jschibelli) • [Blog](https://johnschibelli.dev) • [Email](mailto:jschibelli@gmail.com)
-
+[Portfolio](https://johnschibelli.dev) · [LinkedIn](https://www.linkedin.com/in/johnschibelli/) · [Upwork](https://www.upwork.com/freelancers/~011df46c9ca84040b5) · [IntraWeb Technology](https://www.intrawebtech.com/) · [Email](mailto:jschibelli@gmail.com)
